@@ -1,0 +1,40 @@
+// Desktop Layout
+
+.form-page {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: calc(50% + 80px) calc(50% - 80px);
+
+  .message-container {
+    background-color: #585858;
+    color: #fff;
+    padding: 32px 0;
+    .message {
+      width: 535px;
+      margin-left: auto;
+    }
+  }
+  .form-container {
+    padding: 32px 24px;
+    padding-top: 112px;
+  }
+}
+
+// Mobile layout
+
+@media screen and (max-width: 768px) {
+  .form-page {
+    display: flex;
+    flex-direction: column;
+    .form-container {
+      padding: 32px 16px;
+    }
+    .message-container {
+      .message {
+        width: 100%;
+        margin: 0;
+        padding: 0 16px;
+      }
+    }
+  }
+}

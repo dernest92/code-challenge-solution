@@ -1,0 +1,33 @@
+// Load fonts
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Roboto:400,700&display=swap");
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// Typography
+h1 {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 32px;
+  margin-bottom: 16px;
+}
+
+p {
+  font-family: "Merriweather";
+  font-size: 14px;
+}
+
+.font-light {
+  color: #eaeaea;
+}
+
+// Mobile view
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+}
