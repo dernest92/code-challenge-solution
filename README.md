@@ -18,7 +18,24 @@ You can click [here](https://self-test.netlify.com/) to view a live demo of my s
 Button can accept a string on the 'iconRight' prop. Inside the button component there is an icon object, which renders a different SVG depending on what key is passed.
 
 ```jsx
- <CustomButton iconRight="arrow-right">Next</CustomButton>
+<CustomButton iconRight="arrow-right">Next</CustomButton>
+```
+
+```jsx
+import ArrowRight from "../../assets/White_Arrow.svg";
+
+const icon = { "arrow-right": ArrowRight };
+
+const CustomButton = ({ children, iconRight }) => {
+  return (
+    <button className="btn">
+      {children}
+      {iconRight
+       ? <img className="btn-icon-right" src={icon[iconRight]} />
+       : null }
+    </button>
+  );
+};
 ```
 
 ### Data driven input components
