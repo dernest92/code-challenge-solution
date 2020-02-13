@@ -66,3 +66,5 @@ Creating inputs in this way eliminates the need to add flag props like 'isRequir
 * Use scss variables to store page break widths and reused colors
 * Create "Theme" classes (ie. dark, primary, danger)
 * Create an "Icon" component which accepts an icon name as a prop
+* Improve layout for intermediate screen sizes
+* Organize CSS better (using BEM or some other standard)
